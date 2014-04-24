@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Open Data: les données libérées doivent-elles gratuites ?</title>
+        <meta name="description" content="Site Web réalisé dans le cadre du projet ETIC de Télécom ParisTech et présentant la controverse sur l'Open Data en France.">
+        <meta name="viewport" content="width=device-width">
+
+        <!--(if target dev)><!-->
+        <style type="text/css">
+            @font-face {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 400;
+                src: local('Lato Regular'), local('Lato-Regular'), url('font/Lato-Regular.ttf') format('woff');
+            }
+            @font-face {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 700;
+                src: local('Lato Bold'), local('Lato-Bold'), url('font/Lato-Bold.ttf') format('woff');
+            }
+            @font-face {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 900;
+                src: local('Lato Black'), local('Lato-Black'), url('font/Lato-Black.ttf') format('woff');
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/flat-ui.css">
+        <link rel="stylesheet" href="css/etic-opendata.css">
+        <link rel="stylesheet" href="css/cycle.css">
+        <!--<!(endif)-->
+
+        <!--(if target dist)>
+        <style type="text/css">@import url("http://fonts.googleapis.com/css?family=Lato:400,700,900");</style>
+        <link rel="stylesheet" href="css/etic-opendata.min.css">
+        <!(endif)-->
+
+        <!--[if lt IE 9]>
+            <script src="html5-3.6-respond-1.1.0.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <nav class="main-nav">
+            <ul>
+                <li class="selected"><a href="#frame00"><i class="icon-unlock-alt"></i> <span>OpenData</span></a></li>
+                <li><a href="#frame07"><i class="icon-globe"></i> <span>Carte</span></a></li>
+                <li><a href="#frame10"><i class="icon-calendar"></i> <span>Historddique</span></a></li>
+                <li><a href="#frame20"><i class="icon-user"></i> <span>Acteurs</span></a></li>
+                <li><a href="#frame30"><i class="icon-legal"></i> <span>Législation</span></a></li>
+                <li><a href="#frame40"><i class="icon-comments"></i> <span>Débat</span></a></li>
+            </ul>
+        </nav>
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+        <!-- FRAME 0 -->
+
+        <div class="frame" id="frame00">
+            <i class="icon-lock main-icon"></i>
+            <h1><span class="open-def">Open</span>Data</h1>
+            <p><strong>Donnée <span class="open-def">ouverte</span></strong> : fait auquel on n'apporte aucune valeur ajoutée <span class="open-def">et qui a vocation à être librement accessible et réutilisable</span>.</p>
+            <p>
+                <a href="#frame05" class="btn btn-primary btn-large scroll-to"><i class="icon-play-sign"></i> Commencer</a>
+            </p>
+        </div>
+
+        <!-- FRAME 5 -->
+
+        <div class="frame" id="frame05">
+            <p>Si l’on prend le temps de l’examiner, on se rend facilement compte que notre environnement est constitué d’une multitude de données. Nous en produisons tous les jours, de la simple personne à l’entreprise, qu’on le veuille ou non. Celle-ci lorsqu’elle nous est présentée peut sembler sans réelle valeur : la température en un lieu, le nombre d’habitants d’un pays, ou les horaires de passages d’un bus. Pourtant si l’on regarde de plus près, elle commence à devenir source d’une multitude de nouvelles activités, pour ceux qui tentent de tirer profits de ces nouvelles masses de données. Le développement d’internet et des outils numérique joue le rôle d’un accélérateur : le web est une source quasi inépuisables de données et le numérique offre de nouvelles opportunité pour les exploiter et faciliter leur circulation. </p>
+
+
+            <div class='cycleText'>
+                <div id="cycle"> <!-- Fallback Text Content can go here --> </div>
+                <div class="Txtcadre">
+                    <div class="creation-texte">
+                        <h2 style="font-size: 60px;margin-bottom: 25px;">Création</h2>
+                        <p><i class="icon-chevron-sign-right"></i> Données de l'Etat</p>
+                        <p><i class="icon-chevron-sign-right"></i> Données des collectivités</p>
+                    </div>
+                    <div class="traitement-texte">
+                        <h2 style="font-size: 60px;margin-bottom: 25px;">Traitements</h2>
+                        <p><i class="icon-chevron-sign-right"></i> Format : compatible et adapté à un traitement de l’information</p>
+                        <p><i class="icon-chevron-sign-right"></i> Anonymisation</p>
+                    </div>
+                    <div class="miseDispo-texte">
+                        <h2 style="font-size: 60px;margin-bottom: 25px;">Mise à disposition</h2>
+                        <p><i class="icon-chevron-sign-right"></i>   Le choix d'une infrasctructure</p>
+                        <p><i class="icon-chevron-sign-right"></i> Licences</p>
+                    </div>
+                    <div class="reutil-texte">
+                        <h2 style="font-size: 60px;margin-bottom: 25px;">Ré-utilisation</h2>
+                        <p><i class="icon-chevron-sign-right"></i> Emergence de services, transparence de l’état</p>
+                        <p><i class="icon-chevron-sign-right"></i> Nouveau modèle de développement</p>
+                    </div>
+                </div>
+                <div class="texteBulle1">
+                    <p><i class="icon-money"></i> Anonymisation</p>
+                    <p><i class="icon-money"></i> Main d'oeuvre</p>
+                </div>
+                <div class="texteBulle2">
+                    <p><i class="icon-money"></i> Hébergement (serveurs)</p>
+                    <p><i class="icon-money"></i> Entretiens</p>
+                </div>
+                <div class="texteBulle3">
+                    <p><i class="icon-money"></i> Génération de bénéfices</p>
+                    <p><i class="icon-money"></i> Plusieurs licenses (incompatibles)</p>
+                    <p><i class="icon-money"></i> Coût d'accès aux données</p>
+                </div>
+            </div>
+
+
+            <p>Produire la donnée est la première étape de sa vie, il faut la récupérer (on parle de collecte). Ensuite vient l’utilisation en elle même : on vient lui donner de la valeur en la transformant en information (la mettre en contexte). Dans une logique Open Data, il s’agit ensuite de ne pas laisser “mourir” la donnée, car bien qu’elle soit produite pour une utilisation précise, elle peut connaître une seconde vie, voir même gagner en valeur si elle est utilisée pour d’autres applications. Pour cela il est nécessaire de rassembler les données pour en obtenir une grande quantité, et de les « nettoyer » en les exportant dans un format interopérable qui facilite leur traitement et leur « réutilisation » pour des usages dont bien souvent on ne soupçonnait pas l’existence.</p> 
+
+            <p>Un problème se pose cependant. Bien que ce cycle semble simple, faire vivre la donnée a un coût. Non seulement à sa production, mais également lors de son traitement et de sa redistribution. En effet, pour qu'elle puisse être utilisée par le plus grand nombre, certaines problématiques peuvent se poser : qui est responsable financièrement de la rendre exploitable pour tous ? Qui doit assumer les coûts liés à la mise en place des infrastructures nécessaires à sa redistribution ? Également, certaines données sensibles comme celles relatives à la santé donnent lieu à des problèmes d’anonymisation.
+            </p>
+
+            <p><strong>Tous ces coûts, il faut les assumer, mais qui est responsable? Les pouvoirs publics ? Les réutilisateurs ? Comment faciliter l’innovation économique et sociale tout en assurant une juste répartition des coûts ?</strong></p>
+        </div>
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+        <!-- FRAME 07 -->
+
+        <div class="frame" id="frame07">
+            <i class="icon-globe main-icon"></i>
+            <h1>Carte de la controverse</h1>
+            <p>
+                Pour apporter des éléments de réponse à la problématique du coût et de la valeur des données, il faut s’intéresser au paysage actuel de l’Open Data, notamment sur Internet. Le web est en effet le principal vecteur de données publiques, et permet l’existence de plateformes publiques, que chaque internaute peut consulter, utiliser, etc. Mais le web est aussi un lieu de partage où chacun peut contribuer (ex : openstreetmap.org), et où émergent les innovations. De nombreuses start-ups surfent sur la vague de l’Open Data, en proposant par exemple des services d’extraction ou de visualisation des données. Enfin, une communauté active et diverses associations cherchent à défendre les principes qu’ils jugent inhérents à l’Open Data.
+            </p>
+            <p>
+                La carte ci-dessous vous offre une vue globale de la controverse et du rôle des différents acteurs. Quels sont ceux qui sont impliqués aujourd’hui dans le “mouvement” Open Data ? Qui est plus frileux sur cette question ? La réponse est ici. De plus la carte offre une dimension supplémentaire en vous permettant de visualiser les attentes et les arguments qui justifient les prises de position de chacun.
+            </p>
+            <p>
+                <a href="#frame09" class="btn btn-primary btn-large scroll-to"><i class="icon-play-sign"></i> Voir la carte</a>
+                <a href="static/rapport-general.pdf" class="btn btn-primary btn-large"><i class="icon-file"></i> Lire le rapport général de la controverse</a>
+            </p>
+        </div>
+
+
+
+        <!-- FRAME 09 -->
+
+        <div class="frame map" id="frame09">
+            <nav>
+                <p>Carte</p>
+                <div class="toggle">
+                    <label class="toggle-radio" for="mapArgumentsBtn">ARGUMENTS <i class="icon-circle"></i></label>
+                    <input id="mapArgumentsBtn" type="radio" checked="checked">
+                    <label class="toggle-radio" for="mapActorsBtn"><i class="icon-circle"></i> ACTEURS</label>
+                    <input id="mapActorsBtn" type="radio">
+                </div>
+            </nav>
+
+            <object data="img/carte-arguments.svg" type="image/svg+xml" id="carte-arguments"></object>
+            <object data="img/carte-acteurs.svg" type="image/svg+xml" id="carte-acteurs"></object>
+        </div>
+
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------- -->
+
+        <!-- FRAME 10 -->
+
+        <div class="frame" id="frame10">
+            <i class="icon-calendar main-icon"></i>
+            <h1>Historique</h1>
+            <p>
+                Le phénomène de l’Open Data est très récent en France. Il a principalement été initié aux Etats-Unis dans le contexte du « Freedom of Information Act ». Pourquoi alors est-il important d’étudier sa chronologie en France ? Tout simplement parce qu’il s’agit d’un mouvement encore jeune, dont le cadre juridique et social est en train de se définir et les lois qui le régissent sont soit floues, soit mal appliquées.<br />
+                Avec la création de l’Open Data et la création d’Etalab, plusieurs questions importantes restent à se poser : quels sont les domaines dans lesquels les données peuvent être prélevées (loi du 17 juillet 1987) ?  Comment traiter séparément les données privées et les données publiques (avec les licences par exemple) ? Qui plus est, pour toutes les questions qui se posent au fur et à mesure de l’avancement de l’Open Data, il faut savoir comment légiférer dans ce domaine (consultation par la CNIL dans le but de modifier la loi).
+            </p>
+            <p>
+                En résumé,  le concept est relativement récent et nous observons un phénomène « en train de se faire », regarder en arrière nous permet de voir quelles questions les acteurs se sont posés et comment ils ont tenté d’y répondre. 
+            </p>
+            <p>
+                <a href="#frame15" class="btn btn-primary btn-large scroll-to"><i class="icon-play-sign"></i> Voir la frise</a>
+                <a href="static/revue-presse.pdf" class="btn btn-primary btn-large"><i class="icon-file"></i> Lire la revue de presse</a>
+            </p>
+        </div>
+
+
+        <!-- FRAME 15 -->
+
+        <div class="frame timeline" id="frame15">
+            
+     
+
+            <h2>1966</h2>
+            <h3>Freedom of Information Act (USA)</h3>
+            <p>Signée le 4 juillet 1966, cette loi américaine oblige les agences fédérales à transmettre leurs documents, à quiconque en fait la demande, quelle que soit sa nationalité. Fondée sur le principe de la liberté d’information, elle a été votée dans le contexte de la guerre du Viêt-Nam. Certains domaines sont exemptés : tels que les documents relatifs à la sécurité nationale, à la vie privée ou certaines informations géographiques.</p>
+
+            <h2>1978</h2>
+            <h3>6 janvier : Promulgation de la loi informatique et liberté</h3>
+            <p>C’est la loi assurant la protection des données personnelles disponibles sur tout support informatique. Elle s’applique donc aux données recueillies dans le cadre de l’Open Data.</p>
+
+            <h3>17 juillet : Promulgation de la loi relative à la liberté d’accès aux documents administratifs et à la réutilisation des informations publiques - Création de la CADA</h3>
+            <p>Cette loi oblige la plupart des entités administratives à publier les données qui sont en leur possession, moyennant un coût nul ou “raisonnable”. Elle crée également la CADA, chargée de s’assurer que cette loi est bien appliquée.</p>
+
+            <h2>2002</h2>
+            <h3>16 décembre : Création des premières licences Creative Commons</h3>
+            <p>Ce sont les premières licences permettant  la diffusion de données de manière peu restrictive.</p>
+
+            <h2>2005</h2>
+            <h3>30 décembre : Décret pris pour l’application de la loi du 17 juillet 1978</h3>
+            <p>Il formalise la manière dont les institutions sont tenues de répondre lorsque l’on demande l’accès à certaines de leurs données.</p>
+
+            <h2>2006</h2>
+            <h3>Mars : « Give us back our crown jewels » (The Guardian)</h3>
+            <p>Publié dans le supplément technologie du Guardian, cet article s’oppose à la commercialisation par le gouvernement britannique des données, produites grâce aux fonds publics. Cette situation est perçue comme une manière de faire payer deux fois le contribuable qui chercherait à accéder à ces données. Dans cet article est souligné également l’aspect contre-productif d’une telle politique constituant un frein à l’innovation.</p>
+
+            <h2>2007</h2>
+            <h3>Décembre : Réunion de Sébastopol (Californie)</h3>
+            <p>Ce rassemblement de 30 personnes a pour mission de définir ce qu’est une donnée ouverte. Une liste de 8 critères est élaborée pour les données publiques ouvertes (Open Government Data).  Leur objectif était de définir le principe et peut-être même de le faire adopter aux candidats aux prochaines élections américaines. Le thème de l’open data sera repris par l’administration Obama.</p>
+
+            <h3>Création de l’Open Database License</h3>
+            <p>La première licence destinée non pas aux informations, mais à la base de données dans laquelle elles sont triées.</p>
+
+            <h2>2009</h2>
+            <h3>Mars : Création de la licence CC0</h3>
+            <p>C’est la licence la moins restrictive possible. Elle s’approche du domaine public, aux restrictions légales relatives à chaque pays près.</p>
+
+            <h3>Mai : « We want raw data, now ! » (Tim Berners-Lee)</h3>
+            <p>Le britannique Tim Berners-Lee est considéré comme l’inventeur du World Wide Web. Mais même si le web est ouvert, certaines données restent disséminées, enfermées dans des silos, et ne sont pas naturellement interopérables. Lors d’une conférence TED,  il encourage l'ensemble du monde à libérer ses données afin de les connecter entre elles. Il milite alors pour l'open access et cela concerne autant les institutions politiques (il interpelle directement Barack Obama), les entreprises, les scientifiques, les universitaires mais aussi chaque personne car « chaque aspect de la vie génère des données ».</p>
+
+            <h3>Ouverture de data.gov (USA)</h3>
+            <p>Il s’agit d’un site web géré par le gouvernement fédéral américain, afin de rassembler et de rendre publiques les données collectées par le gouvernement.</p>
+
+            <h3>Ouverture de data.gov.uk (GB)</h3>
+            <p></p>
+
+            <h2>2010</h2>
+            <h3>Octobre : Plateforme de la métropole rennaise</h3>
+            <p>En France, la métropole rennaise est pionnière en matière d’ouverture des données publiques. Pour accompagner cette démarche, Rennes Métropole a organisé un concours d'applications, récompensant des services innovants élaborés à partir de ces données.</p>
+
+            <h2>2011</h2>
+            <h3>21 février : Création de la mission Etalab chargée de la création du portail data.gouv.fr</h3>
+            <p>C’est une mission placée sous l'autorité du Premier ministre qui est chargée de « la création d'un portail unique interministériel des données publiques », à savoir le portail « data.gouv.fr » qui doit rassembler et mettre à disposition gratuitement les informations publiques de l’état</p>
+
+            <h3>29 avril : Création du Conseil National du Numérique</h3>
+            <p>C’est un organisme consultatif créé sous le gouvernement de Nicolas Sarkozy. Il a pour mission « d'éclairer le Gouvernement et de participer au débat public dans le domaine du numérique ». C’est dans ce cadre qu’il a publié de nombreuses recommendations sur l’Open Data. Il propose notamment d’étendre le périmètre des données publiques soumises à publication aux EPIC (établissements publics industriels et commerciaux) et de mettre en place un standard de publication qui faciliterait leur réutilisation.</p>
+
+            <h3>26 mai : Circulaire de François Fillon</h3>
+            <p>Elle demande à tous les services de l’état de faciliter l’accès aux données publiques en leur possession, notamment en imposant leur gratuité.</p>
+
+            <h3>Juin : « La RATP veut garder ses données pour elle »</h3>
+            <p>La RATP fait alors valoir qu'elle possède les droits sur la carte du métro utilisée dans l’application pour smartphone “Check My Metro”. La RATP endosse alors le mauvais rôle en faisant le choix de garder ses données privées, ce que beaucoup jugent incohérent.</p>
+
+            <h3>Octobre : Création de la licence ouverte par Etalab</h3>
+            <p>C’est une licence spécialement conçue pour la diffusion de données dans le cadre de l’Open Data.</p>
+
+            <h3>Décembre : Ouverture de la plateforme française data.gouv.fr</h3>
+            <p>Etalab coordonne l’ouverture des données publiques en France. La plateforme heberge les données produites par les administrations de l’Etat. Les collectivités locales et les autorités administratives indépendantes ont été également invités à ouvrir leurs données publiques sur data.gouv.fr.</p>
+
+            <h2>2012</h2>
+            <h3>Octobre : Ouverture de la plateforme data.ratp.fr</h3>
+            <p></p>
+
+            <h2>2013</h2>
+            <h3>6 mars : Début de la consultation de la CNIL à propos de l’Open Data</h3>
+            <p>La CNIL commence à comprendre l’enjeu de l’Open Data: « L'Open Data répond à l'exigence de renforcer la transparence de l'action de l'administration en opérant un élargissement et un approfondissement des droits à l'accès aux informations publiques. Il peut sans conteste donner lieu à de nouveaux services. ». A l’issue de cette consultation, elle proposera donc peut-être une évolution de la loi informatique et liberté favorisant le développement de l’Open Data.</p>
+        </div>
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------- -->
+
+        <!-- FRAME 20 -->
+
+        <div class="frame" id="frame20">
+            <i class="icon-user main-icon"></i>
+            <h1>Acteurs</h1>
+            <p>
+                L’ouverture des données (Open Data) concerne en premier lieu les collectivités et les organismes publics. Ce processus a d’abord pour but la mise à disposition des données publiques aux citoyens et aux entrepreneurs susceptibles de les réutiliser. Mais cette tendance n’est pas unilatérale, et le privé comme les associations sont à l’origine de nombreuses initiatives dans le domaine de l’Open Data, et sont aussi amenés à s’exprimer sur les modalités d’accès aux données. Cette question se pose également de manière pertinente aux établissements publics, dont les modèles économiques reposent, pour certains d’entre eux, sur la vente de données. Tous les acteurs n’ont pas le même point de vue et les rapports sont parfois conflictuels : certains refusent de libérer leurs données pour ne pas avoir de frais supplémentaires ou pour préserver leur business model, quand d’autres refusent de payer quoi que ce soit alors qu’il produisent de la richesse. 
+            </p>
+            <p>
+                Le tableau interactif, ci-dessous, recense quelques-uns des acteurs les plus actifs sur le sujet. Vous y trouverez la position tenue par chacun ainsi qu’une description de la manière dont il est engagé dans le débat.
+            </p>
+            <p>
+                <a href="#frame25" class="btn btn-primary btn-large scroll-to"><i class="icon-play-sign"></i> Voir les acteurs</a> 
+                <a href="static/webographie.pdf" class="btn btn-primary btn-large"><i class="icon-file"></i> Lire le rapport du webographe</a>
+            </p>
+        </div>
+
+
+        <!-- FRAME 25 -->
+
+        <div class="frame actors" id="frame25">
+            <nav id="actorsViewChoice">
+                <p>Afficher par</p>
+                <div class="toggle">
+                    <label class="toggle-radio" for="actorsView2">CATEGORIES <i class="icon-circle"></i></label>
+                    <input id="actorsView1" type="radio" checked="checked">
+                    <label class="toggle-radio" for="actorsView1"><i class="icon-circle"></i> POSITIONS</label>
+                    <input id="actorsView2" type="radio">
+                </div>
+            </nav>
+
+            <nav id="actorsSelectAttributes"></nav>
+
+            <div id="actor-details"></div>
+            
+            <div class="row-fluid"></div>
+
+            <div class="actor" data-position="observateur" data-categorie="citoyens">
+                <div class="actor-img-container"><img src="img/liberTIC.png"></div>
+                <h3>LiberTIC</h3>
+                <p>LiberTIC est une association nantaise fondée en 2009. C’est un des membres les plus actifs du mouvement Open Data français. Ses arguments sont que la libération des données profite à tous les acteurs, car les collectivités rationalisent et valorisent leur patrimoine immatériel, les entreprises y trouvent un terreau à la création de services innovants, les chercheurs ont les éléments sur lesquels développer de nouvelles études et les citoyens accèdent aux informations de la vie publique </p>
+            </div>
+
+
+            <div class="actor" data-position="observateur" data-categorie="citoyens">
+                <div class="actor-img-container"><img src="img/SunLight.png"></div>
+                <h3>Sunlight Foundation</h3>
+                <p>La Sunlight Foundation est une association américaine créée en 2006. Son domaine d’action principale est la transparence et la résponsabilisation du gouvernement et de ses actions. Ainsi elle s’est engagée dans le mouvement Open Data car ce dernier offre les données qui lui permettent de surveiller les actions de l’Etat et de les rendre publiques grâce aux différentes applications mobiles qu’elle a développées. </p>
+            </div>
+
+            <div class="actor" data-position="observateur" data-categorie="citoyens">
+                <div class="actor-img-container"><img src="img/okf.png"></div>
+                <h3>Open Knowledge Foundation</h3>
+                <p>L’Open Knowledge Foundation est une organisation à but non lucratif britannique fondée en 2004. Elle est dédiéé à la promotion de l’Open data et des contenus libre sous toutes leurs formes. Elle a développé l’infrastructure logiciel derrière les portails data.gov et data.gov.uk et c’est grâce à ses qualités techniques qu’elle s’est imposée au niveau européen. Pour elle l’Open Data permet d’améliorer la culture, la recherche, la gouvernance et l’économie.</p>
+            </div>
+
+
+            <div class="actor" data-position="contributeur" data-categorie="public">
+                <div class="actor-img-container"><img src="img/etalab.png"></div>
+                <h3>Etalab</h3>
+                <p>Etalab est le service public qui gère la politique française de l’Open Data et administre le portail français de libération des données data.gouv.fr. Créé le 21 février 2011 à la demande de François Fillon. Il a également dévellopé la licence ouverte qui s’applique aux données libérées par l’Etat. Sa position est relativement neutre dans la mesure où son seul rôle est de gérer l’infrastructure de mise en ligne des données et non les coûts de fabrication de ces dernières</p>
+            </div>
+
+
+            <div class="actor" data-position="reticent" data-categorie="public">
+                <div class="actor-img-container"><img src="img/ign.png"></div>
+                <h3>IGN</h3>
+                <p>L'Institut national de l'information géographique et forestière, est un établissement public à caractère administratif ayant pour mission d'assurer la production, l'entretien et la diffusion de l'information géographique de référence en France. Son rôle dans l’Open Data français est compliqué car sa seule source de revenu est la vente des données qu’il collect. Ainsi cet acteur est réticent car s’inscrire dans une libération gratuite des données entrainerait sa faillite.</p>
+            </div>
+
+
+            <div class="actor" data-position="reticent" data-categorie="public">
+                <div class="actor-img-container"><img src="img/ratp.png"></div>
+                <h3>RATP</h3>
+                <p>La RATP est un Etablissement Public à caractère Industriel et Commercial (EPIC). Ainsi grâce à ce statut elle n’est pas concernée par la loi qui impose la libération de ses données sous format libre. Elle est fortement réticente à cette libération comme le prouve le procès qu’elle a fait lorsqu’une application de carte du réseau du métro parisien a été mise en vente. Il est à noter que le réseau de transport de Rennes a choisi de libérer ses données.</p>
+            </div>
+
+
+            <div class="actor" data-position="reticent" data-categorie="public">
+                <div class="actor-img-container"><img src="img/sncf.png"></div>
+                <h3>SNCF</h3>
+                <p>La SNCF est un Etablissement Public à caractère Industriel et Commercial (EPIC). Un peu moins réticente que sa petite soeur la RATP, elle se met petit à petit à l’Open Data en libérant par exemple les probabilités de retard par trajet. Cependant elle n’en fait pas encore une politique généralisée pour des raisons de coûts et de modèle économique (ces données à présent gratuites étaient vendu avant).</p>
+            </div>
+
+            <div class="actor" data-position="contributeur" data-categorie="public">
+                <div class="actor-img-container"><img src="img/rennes.png"></div>
+                <h3>Rennes métropole</h3>   
+                <p>Rennes Métropole et la ville de Rennes  met à disposition des données publiques, issues notamment de son réseau de transport, ainsi que des informations géographiques. Collectivité pionnière en France dans le domaine de l’Open Data, elle a été suivie entre autres par Nantes, Paris ou encore le conseil général de Loire-Atlantique. Notons que la métropole rennaise met à disposition ses données sous une licence propre : la licence Rennes Métropole. </p>
+            </div>
+
+            <div class="actor" data-position="reutilisateur" data-categorie="prive">
+                <div class="actor-img-container"><img src="img/datapublica.png"></div>
+                <h3>Data Publica</h3>   
+                <p>Entreprise française, Data Publica s’est spécialisée dans le marché de la donnée. Elle propose différents services, notamment pour l’extraction, l’enrichissement et la visualisation des données. </p>
+            </div>
+
+
+            <div class="actor" data-position="contributeur" data-categorie="prive">
+                <div class="actor-img-container"><img src="img/velib.png"></div>
+                <h3>JC Decaux</h3>   
+                <p>Bien que qualifié ici de contributeur à la libération des données, JC Decaux a eu été longtemps réticent vis-à-vis de ce mouvement. En effet, ce dernier a autrefois averti que les données sur les Vélib étaient leur propriété intelectuelle. Aujourd’hui, ses positions ont changé. Les données des Vélib ( horaires de disponibilité, situation des bornes) sont diffusées en Open Data sur son site internet. Il qualifie donc les Vélib de précurseur dans le domaine de l’Open Data et espère la création d’applications à partir de ces données.</p>
+            </div>
+
+            <div class="actor" data-position="reutilisateur" data-categorie="prive">
+                <div class="actor-img-container"><img src="img/checkmymetro.png"></div>
+                <h3>CheckMyMetro</h3>   
+                <p>L’application Check my metro! est une application gratuite sur l’App Store et qui proposait à ses utilisateurs plusieurs services. Elle proposait ainsi une carte du métro de Paris, les horaires des métros suivants… et se positionnait donc comme partisante du mouvement de l’Open Data. Cette application n’a cependant pas pu continuer à diffuser ces informations pleinement, car la RATP a considéré que certaines informations étaient disponibles sur leur propre application payante : « RATP Premium ».</p>
+            </div>
+
+            <div class="actor" data-position="reutilisateur" data-categorie="prive">
+                <div class="actor-img-container"><img src="img/dataveyes.png"></div>
+                <h3>Dataveyes</h3>   
+                <p>Datav’eyes est une start-up française spécialisée dans le dévellopement d’outils de visualisation de données interactifs. Cette dernière est favorable au dévellopement de l’Open Data car il lui apporte plus de clients.</p>
+            </div>
+
+            <div class="actor" data-position="reutilisateur" data-categorie="prive">
+                <div class="actor-img-container"><img src="img/qunb.png"></div>
+                <h3>Qunb</h3>   
+                <p>Qunb est une jeune start-up française qui travaille dans le domaine de la data visualisation. Leur spécialité est de récupérer de grandes bases de données et de les présenter sous une forme plus agréable à l’utilisateur. En particulier elle profite de l’Open Data car ce dernier lui apporte ces données si précieuses.</p>
+            </div>
+
+            <div class="actor" data-position="observateur" data-categorie="citoyens">
+                <div class="actor-img-container"><img src="img/chignard.png"></div>
+                <h3>Simon Chignard</h3>   <p>Il a participé dès 2010 à l’ouverture des données publiques de Rennes Métropole, territoire pionnier en France. Conférencier, il intervient régulièrement sur le sujet et a publié plusieurs articles sur l’approche politique, sociale et économique de l’open data. Consultant et formateur indépendant, il est à titre bénévole président de l’association Bug (innovation sociale et numérique) et vice-président de la Cantine numérique rennaise.</p>
+            </div>
+        </div>
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------- -->
+
+        <!-- FRAME 30 -->
+
+        <div class="frame" id="frame30">
+            <i class="icon-legal main-icon"></i>
+            <h1>Législation</h1>
+            <p>
+               Le développement de l’Open Data a beau être assez récent, le texte juridique principal qui entoure la diffusion des données publiques est lui plutôt ancien. Nous nous attacherons donc particulièrement ici à décrire les différents textes qui ont eu pour effet de remettre la loi “CADA” au goût du jour, tout en s’appuyant sur les fondamentaux initiés par celle-ci. 
+            </p>
+            <p>
+                De plus, la question des licences de distribution des données est un enjeu majeur pour leur libre réutilisation, nous vous présenterons par la suite celles d’entre elles qui s’appliquent particulièrement bien à notre problématique. 
+            </p>
+            <p>
+                <a href="#frame35" class="btn btn-primary btn-large scroll-to"><i class="icon-play-sign"></i> Voir la législation</a> 
+                <a href="static/juriste.pdf" class="btn btn-primary btn-large"><i class="icon-file"></i> Lire le rapport du juriste</a>
+            </p>
+        </div>
+
+
+        <!-- FRAME 35 -->
+
+        <div class="frame legal row-fluid" id="frame35">
+            <div class="span6">
+                <h2>Législation</h2>
+
+                <h3>Loi informatique et liberté</h3>
+                <p>
+                    Cette loi limite la diffusion des données, car lorsque des informations personnelles figurent dans celles-ci, elles ne sont pas publiables. Il faut alors anonymiser les données, et l’administration n’est pas dans l’obligation de le faire si elle trouve le coût trop important, bien que ce soit à la personne réutilisatrice des données de payer cette anonymisation.<br />
+                    De plus, elle stipule que «les données sont collectées pour des finalités déterminées, explicites et légitimes et ne sont pas traitées ultérieurement de manière incompatible avec ces finalités », ce qui est contraire au principe de base de l’Open Data qui veut que l’on amasse d’abord des données, pour ensuite leur trouver un usage.
+                </p>
+
+                <h3>Loi relative à la liberté d’accès aux documents administratifs et à la réutilisation des informations publiques</h3>
+                <p>
+                    Elle stipule que les informations figurant dans les documents administratifs peuvent être réutilisées par quiconque, que ce soit ou non pour les mêmes fins que celles pour lesquelles les données ont été produites par le service public. On note toutefois plusieurs exceptions : données soumise à droit d’auteur, contenant des informations personnelles, secret-défense et provenant des EPIC (établissements dotés d'une mission de service public à caractère industriel ou commercial) ou des établissements culturels ou de recherche et d’éducation.<br />
+                    Les données peuvent être soumises à une redevance, qui ne devra pas excéder les coûts de production et de mise à disposition de la donnée plus une rémunération “raisonnable”.<br />
+                    Enfin, chaque administration doit publier la liste des données dont elle dispose et nommer une personne responsable de leur diffusion.
+                </p>
+                <p>
+                    Cette loi crée également la CADA (commission d’accès aux documents administratifs), entité administrative indépendante chargée de donner son avis sur d’éventuels conflits entre l’administration et les personnes souhaitant accéder aux données.
+                </p>
+
+                <h3>Décret pris pour l’application de la loi du 17 juillet 1978</h3>
+                <p>
+                    Il formalise la manière dont les institutions sont tenues de répondre lorsque l’on demande l’accès à certaines de leurs données. Elles sont par exemple tenues de répondre sous un mois. 
+                </p>
+
+                <h3>Circulaire de François Fillon</h3>
+                <p>
+                    Elle a été écrite afin de « faciliter l'accès en ligne aux informations publiques dans un souci de transparence de l'action de l'Etat et afin de favoriser l'innovation». Elle stipule que « La décision de subordonner la réutilisation de certaines informations au versement d'une redevance devra être dûment justifiée par des circonstances particulières. Ces informations devront être au préalable inscrites sur une liste établie par décret ». Cependant, les données déjà soumises à redevance avant ce décret ont pu le rester à condition qu’elles aient été inscrites en annexe de cette même liste.
+                </p>
+            </div>
+
+            <div class="span6">
+              <h2>Licences</h2>
+
+                <h3>Open Database License</h3>
+                <p>
+                    Elle ne s’applique pas aux données en elles-mêmes mais à la base de données dans laquelle elles sont classées. Elle permet d’exploiter publiquement, commercialement ou non, la base de données, à condition de conserver la même licence lors de son utilisation.
+                </p>
+
+                <h3>Licences Creative Commons</h3>
+                <p>
+                    Ces licences permettent la diffusion des données de manière très peu restrictive. En effet, les seules conditions à la réutilisation qu’imposent ces licences ne sont généralement que la citation de l’auteur, le partage des conditions initiales à l’identique, et parfois la non utilisation commerciale ou encore la non-modification des données.
+                </p>
+
+                <h3>Licence CC0</h3>
+                <p>
+                    Les données sont réutilisables avec les mêmes droits que si elles appartenaient au domaine public, excepté certaines conditions imposées par la loi dans certains pays. Cette licence est utile car dans plusieurs pays, y compris la France, il n’est pas possible de céder son oeuvre au domaine public.
+                </p>
+
+                <h3>Licence ouverte par Etalab</h3>
+                <p>
+                    Elle permet de reproduire, copier, publier et transmettre l’information, de l’adapter ou la modifier « notamment pour créer des informations dérivées », de l’exploiter à titre commercial et si besoin de la combiner à d’autres informations. Tout cela doit cependant se faire sous réserve de mentionner la paternité de l’information et la date de sa dernière mise à jour (« afin de préserver la qualité des sources »). Elle est également compatible avec les autres licences au niveau européen. C’est la licence utilisée pour les données publiées par l’état sur le portail data.gouv.fr.
+                </p>
+            </div>
+        </div>
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+        <!-- FRAME 40 -->
+
+        <div class="frame" id="frame40">
+            <i class="icon-comments main-icon"></i>
+            <h1>Débat</h1>
+            <p>
+                Comme vous avez pu le remarquer la controverse est trop jeune pour penser avoir trouvé La solution qui puisse mettre tout le monde d'accord. La question est néanmoins pertinente car elle touche une pratique qui se démocratise de plus en plus, personne ne remet en cause le progrès et la richesse que peut apporter l'Open Data. C'est sur son cadre où le débat est à faire, et c'est une problématique suffisamment importante pour qu'elle puisse s'adresser à tous et non uniquement aux acteurs majoritaires.
+            </p>
+            <p>
+                C'est dans cet objectif que la présente partie existe : vous laisser vous exprimer avec votre sensibilité sur un cadre idéal dans le lequel l'Open Data serait le plus à même de prospérer. C'est une question délicate, et on espère vous avoir donné des éléments suffisamment pertinents pour que vous puissiez au mieux y répondre.
+            </p>
+            <p>
+                <a href="#frame45" class="btn btn-primary btn-large scroll-to"><i class="icon-bullhorn"></i> Participer au débat</a> 
+            </p>
+        </div>
+
+
+        <!-- FRAME 45 -->
+
+        <div class="frame" id="frame45">
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                var disqus_shortname = 'etic-opendata'; 
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------- -->
+
+        <!-- FOOTER -->
+
+        <footer class="frame">
+            <p>
+                Matthieu ALLEGRE - Paul BERTHIER - Gabriel GIVAJA - Nicolas GOTCHAC - Adrien MATISSART - Emile QUENEE - Félix RAIMUNDO<br />
+                Encadrant : Clément MABI
+            </p>
+            <p><a href="http://fortawesome.github.io/Font-Awesome/icons/">Font Awesome Icons</a> - <a href="http://gruntjs.com/">Grunt</a> - <a href="http://designmodo.github.io/Flat-UI/">Flat UI</a> - <a href="http://jquery.com/">jQuery</a> - <a href="http://twitter.github.io/bootstrap/">Bootstrap</a> - <a href="http://lesscss.org/">Less</a> - <a href="http://coffeescript.org/">CoffeeScript</a> - <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a></p>
+            <p><a href="https://github.com/allegrem/etic-opendata">Fork me on GitHub</a> - <a href="MENTIONS-LEGALES">Mentions légales</a> - <a href="http://www.telecom-paristech.fr">Télécom ParisTech</a> - <a href="http://ethique-tic.fr/2013/">ETIC 2013</a></p>
+        </footer>
+
+
+
+        <!-- some scripts -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <script src="js/bootstrap.min.js"></script>
+
+        <script src="js/etic-opendata.js"></script>
+
+        <script src="js/custom_radio.min.js"></script>
+
+        <script src="js/cycle.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
